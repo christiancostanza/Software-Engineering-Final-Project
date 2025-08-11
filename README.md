@@ -1,6 +1,8 @@
 # Software-Engineering-Final-Project
 
 > Short description: A Flask-based web app (group final project). This repo contains the web application, static assets, templates, and utilities required to run the app locally and deploy to a platform such as Azure App Service or Heroku.
+> Worked in a four person group and developed a web app to allow you to create your own personal cookbook. Pulling from an api for recipes it allows you to save those recipes and search for new recipes based on various tags, such as dietary restrictions or finding recipes based on what you have on hand.
+> I personally contributed to much of the front end as well as the connection of front and backend as well as assisting with the implementation of the database.
 
 ## Features
 - Flask backend (`app.py`)
@@ -40,9 +42,6 @@ Navigate to `http://127.0.0.1:5000` to view the app.
 - Ensure `requirements.txt` and `startup` (or `gunicorn`) command provided in App Service settings.
 - Store secrets (DB connection string) in App Service configuration rather than in code.
 
-### Heroku
-- Add a `Procfile` with: `web: gunicorn app:app`
-- Set environment variables via Heroku config
 
 ## Remove embedded `.git` folder
 The uploaded zip includes a `.git` folder from the original project. To create a clean repository, remove or rename the `.git` folder before initializing a new remote repo. Use the provided `prepare_repo.sh` helper.
